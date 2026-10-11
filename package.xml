@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model
+  href="http://download.ros.org/schema/package_format2.xsd"
+  schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>yamlcpp_vendor</name>
+  <version>0.1.0</version>
+  <description>
+    Builds yaml-cpp (C++) 0.8.0 cross-compiled for VxWorks and installs its cmake
+    config, so lyrical's yaml_cpp_vendor shim (which expects a system yaml-cpp)
+    resolves. Matches Ubuntu 26.04 libyaml-cpp-dev.
+  </description>
+  <maintainer email="Andrei.Kholodnyi@gmail.com">Andrei Kholodnyi</maintainer>
+  <license>Apache License 2.0</license>
+  <license>MIT</license>
+
+  <url type="repository">https://github.com/jbeder/yaml-cpp</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>git</buildtool_depend>
+
+  <depend>libyaml-cpp-dev</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
